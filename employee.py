@@ -1,7 +1,7 @@
 import sys
 
 def get_employee_info(name, emp_id, department, salary):
-    """Return formated string containing employee details"""
+  
     return (
         f"Employee Name:{name},"
         f"Employee ID:{emp_id},"
