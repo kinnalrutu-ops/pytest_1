@@ -1,12 +1,13 @@
-def emp_det(name, emp_id, emp_dept,salary):
-   res=(f"Employee Name: {name}\n"
-        f"Employee ID: {emp_id}\n"
-        f"Employee Department: {emp_dept}\n"
-        f"Employee Salary: {salary}\n")
-   return res
-if __name__ == "__main__":
-    name="alice"
-    emp_id=101
-    emp_dept="HR"
-    salary=60000
-    print(emp_det(name, emp_id, emp_dept,salary))
+import sys
+
+def get_employee_info(name, emp_id, department, salary):
+    """Return formated string containing employee details"""
+    return (
+        f"Employee Name:{name},"
+        f"Employee ID:{emp_id},"
+        f"Department:{department},"
+        f"Salary:{salary:.2f}"
+    )
+if _name_ == "_main_":
+    print("=== Employee details ===")
+    print(get_employee_info("John Doe","E101","IT",55000))
