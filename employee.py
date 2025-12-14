@@ -8,6 +8,6 @@ def get_employee_info(name, emp_id, department, salary):
         f"Department:{department},"
         f"Salary:{salary:.2f}"
     )
-if _name_ == "_main_":
+if __name__ == "__main__":
     print("=== Employee details ===")
     print(get_employee_info("John Doe","E101","IT",55000))
